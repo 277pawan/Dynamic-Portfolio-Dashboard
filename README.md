@@ -29,6 +29,22 @@ A real-time portfolio tracking application built with React, TypeScript, Tailwin
 - **CORS** enabled for cross-origin requests
 - **Axios** for HTTP requests
 
+### Challenges Faced
+
+ During development, I encountered and solved several challenges:
+
+- Simulating Real-time Market Data
+ Since real financial APIs have strict rate limits or paid access, I created a mock data layer that mimics live price updates every 15 seconds. This helped demonstrate real-time updates without external dependencies.
+
+- State Management and Performance
+ Frequent updates caused unnecessary re-renders in React. I resolved this using useMemo, useCallback, and efficient component structures to ensure smooth UI performance even with continuous refreshes.
+
+- Backend Integration and CORS Issues
+ While connecting the Express backend with the React frontend, I initially faced CORS errors. I resolved it by enabling CORS middleware properly and defining origin rules explicitly.
+
+- Responsive Layout and Alignment
+ Making the table and sector summary responsive across different screen sizes required fine-tuning Tailwind utility classes and using CSS Grid effectively.
+
 ## Project Structure
 
 ```
